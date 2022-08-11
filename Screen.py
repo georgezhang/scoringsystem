@@ -21,7 +21,7 @@ class Screen:
         print('See you next time!')
 
 
-    def show_scoreboad(self):
+    def show_scoreboard(self):
         print('-------- SCOREBOARD -----------')
         line_num = 1
         for m in self.game.get_marks():
@@ -46,7 +46,7 @@ class Screen:
         if command == 'score':
             self.first_command = command
 
-            body_line = self.show_scoreboad()
+            body_line = self.show_scoreboard()
         elif command == 'help':
             self.first_command = command
 
@@ -55,12 +55,12 @@ class Screen:
             self.first_command = command
             info = 'Please type a team id.'
 
-            body_line = self.show_scoreboad()
+            body_line = self.show_scoreboard()
         elif command == 'cancel':
             self.clear_command()
             info = ''
 
-            body_line = self.show_scoreboad()
+            body_line = self.show_scoreboard()
         elif self.first_command == 'add':
             if self.second_command == '':
                 self.current_team = self.game.get_team(command)
@@ -78,7 +78,7 @@ class Screen:
                 info = 'Added mark successfully!'
                 self.clear_command()
 
-            body_line = self.show_scoreboad()
+            body_line = self.show_scoreboard()
         else:
             body_line = show_heart()
 
