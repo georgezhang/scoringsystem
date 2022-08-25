@@ -3,5 +3,5 @@ class Mark:
         self.id = id
         self.team = team
         self.judge = judge
-        self.task_type = task_type
+        self.task_type = task_type #1 - performance, 2 - presentation
         self.points = points

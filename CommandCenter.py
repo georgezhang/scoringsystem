@@ -5,8 +5,31 @@ from Team import Team
 
 def load_game():
     game = Game()
-    judge_george = Judge('ge', 'George Zhang')
-    game.add_judge(judge_george)
+    # add judges to the game
+    f1 = open("./data/judges.txt", "r")
+    while True:
+        line = f1.readline()
+        # check if end of file
+        if len(line) == 0:
+            break
+        x1 = line.split('|')
+        judge = Judge(x1[0], x1[1])
+        game.add_judge(judge)
+    f1.close()
+
+    # add teams to the game
+    f2 = open("./data/teams.txt", "r")
+    while True:
+        line = f2.readline()
+        # check if end of file
+        if len(line) == 0:
+            break
+        x2 = line.split('|')
+        team = Team(x2[0], x2[1], x2[2])
+        game.add_team(team)
+    f2.close()
+
+    '''
     judge_vivian = Judge('vi', 'Vivan Jo')
     game.add_judge(judge_vivian)
 
@@ -14,6 +37,7 @@ def load_game():
     game.add_team(team_a1)
     team_a2 = Team('a2', 'Panda', 'Greg Wu, Grace Hi')
     game.add_team(team_a2)
+    '''
 
     return game
 

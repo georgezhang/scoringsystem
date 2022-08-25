@@ -1,3 +1,6 @@
+def get_points(mark):
+    return mark.points
+
 class Game:
     def __init__(self):
         self.judges = []
@@ -21,4 +24,20 @@ class Game:
 
     def get_marks(self):
         # TODO: group by team and sort by points descending
-        return self.marks
+        dict = {}
+        for mark in self.marks:
+            if mark.team.id in dict:
+                if mark.points > dict[mark.team.id].points:
+                    dict[mark.team.id] = mark
+            else:
+                dict[mark.team.id] = mark
+        # unique mark for each team
+        teams = []
+        # turn dict into a list order by points descending
+        for i in dict.items():
+            teams.append(i[1])
+
+        # use sort to sort the teams by points. get_points is a function at the top
+        teams.sort(key=get_points, reverse=True)
+        return teams
+

@@ -1,0 +1,11 @@
+a1|a1_No|David Qiao, Hao Cheng, Jordan Liao|Robot Dunk|12 mins
+a2|a2_team|Anthony Li, Alexander Li||
+b1|b1_Micro Frones|Alex Lin, Kevin Xu, Kyna Sha, Sophie Zhi|Robot Arm plays simple game
+c1|c1_Steampunk Artificers|Pierce Zhang; Andrew Ma; Alan Zhu; Kevin Song|EZ Lego Symphony; Guess me Not|10mins + 5 mins
+c2|c2_Steampunk Artificers|Nuno Gao,Kevin Song|Chess DB|5 minus
+d1|d1_Turtle squad|Jerry Li, Matthew Zhang|Move, talk, shoot, and dance (project 1)                         Distance and Colour Sensor (project 2)|5 minutes (project 1), 5 minutes (project 2)
+d2|d2_Rockstar|Colin Liu
+d3|d3_Team Tricky|Jack Li, Zachary Li|Project Labyrinth(maze)|10 mins assuming no technical difficulties
+e1|e1_team|Jordan Chan, Justin Chan, Eric Luo, Edward Luo
+e2|e2_team|Alex Yang, George Yang
+e3|e3_team|Colin Zhou, Christine Huang, Jake Shi|Pinball
